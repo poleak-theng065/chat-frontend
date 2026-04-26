@@ -1,0 +1,45 @@
+/* ── Pulse Design System ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       #0d0f12;
+  --surface:  #13161b;
+  --panel:    #181c22;
+  --border:   #252a33;
+  --border2:  #2e3540;
+
+  --text:     #e8eaf0;
+  --muted:    #6b7280;
+  --faint:    #3a4050;
+
+  --accent:   #4fffb0;
+  --accent2:  #00d4ff;
+  --danger:   #ff4d6d;
+  --warn:     #ffb830;
+
+  --radius:   12px;
+  --radius-sm: 6px;
+
+  --font-ui:   'Syne', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  --shadow: 0 4px 24px rgba(0,0,0,.45);
+  --glow:   0 0 20px rgba(79,255,176,.15);
+}
+
+html, body, #app {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 4px; }
+
+input, textarea, button { font-family: inherit; }
+
+/* Utility */
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
